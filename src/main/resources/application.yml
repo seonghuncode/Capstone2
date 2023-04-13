@@ -1,2 +1,9 @@
+#포트번호 지정
 server:
   port: 8085
+
+#타임리프를 사용할 경로를 지정해 주어야 templates아래 html파일을 찾아간다.
+spring:
+  thymeleaf:
+    cache: false
+    prefix: file:src/main/resources/templates/
