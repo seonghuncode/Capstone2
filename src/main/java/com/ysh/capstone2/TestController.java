@@ -20,6 +20,13 @@ public class TestController {
     }
 
 
+    //우선 testController에서 리턴 하는 코드 사용하고
+    //-> 추후에 디자인 완성되면 controller나누기 (+service, repository)
+    @RequestMapping("/mainPage")
+    public String mainPage(){
+        return "content/main";
+    }
+
 
 
 
