@@ -1,0 +1,29 @@
+.location {
+    background-color: red;
+    display: inline;
+
+
+}
+
+.tableSet {
+    /*display: inline;*/
+    width: 70%;
+    float: right;
+    text-align: center;
+}
+
+.searchState1{  /* 메인페이지 에서 검색기능에 대한 css */
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 50px;
+}
+
+.searchState2{  /* 메인페이지 에서 검색기능에 대한 css */
+    float: right;
+}
+
+/* a태그 노멀라이즈 */
+a{
+    text-decoration: none;
+    color: inherit;
+}

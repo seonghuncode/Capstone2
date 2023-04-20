@@ -1,4 +1,4 @@
-package com.ysh.capstone2;
+package com.ysh.capstone2.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,7 +24,7 @@ public class TestController {
     //-> 추후에 디자인 완성되면 controller나누기 (+service, repository)
     @RequestMapping("/mainPage")
     public String mainPage(){
-        return "content/main";
+        return "content/main/notification";
     }
 
 

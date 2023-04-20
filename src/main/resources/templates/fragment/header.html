@@ -3,9 +3,10 @@
 
 
 <!-- header의 경우 내비게이션바와 같이 다른 페이지 에서도 항상 공통적으로 나오는 것들을 모아두는 역할 -->
-<header th:fragment="headerFragment(pageName)">
+<header th:fragment="headerFragment(pageName)"> <!-- 각 페이지 에서 페이지 이름을 받아 페이지 창 최상단에 보여준다. -->
 
 
+    <!-- 내비게이션 바에 해당 하는 코드 -->
     <nav class="navbar navbar-expand-lg bg-light all_nav">
         <div class="container-fluid up_and_down">
             <!-- 에인 페이지랑 연결-->
@@ -35,8 +36,25 @@
         </div>
     </nav>
 
+    <!-- 내비게이션 바 아래 각 페이지 에서 페이지 이름을 받아 어떤 페이지 인지 페이지 이름을 보여준다. -->
     <h3 class="pageName" th:text="${pageName}"></h3>
 
+<!--    &lt;!&ndash; 페이지 좌측에 페이지 버튼을 보여준다. &ndash;&gt;-->
+<!--    <div class="menuTap">-->
+<!--        <div class="btn-group-vertical menuTap_W" role="group" aria-label="Vertical radio toggle button group">-->
+<!--            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked>-->
+<!--            <label class="btn btn-outline-info" for="vbtn-radio1">공지</label>-->
+<!--            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">-->
+<!--            <label class="btn btn-outline-info" for="vbtn-radio2">규칙</label>-->
+<!--            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">-->
+<!--            <label class="btn btn-outline-info" for="vbtn-radio3">조직도</label>-->
+<!--            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio4" autocomplete="off">-->
+<!--            <label class="btn btn-outline-info" for="vbtn-radio4">회비내역</label>-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+    <!-- 현재 사용X, 추후 내비게이션 바에 대한 기능을 ajax로 구현할 경우 파일을 불러올때 사용 -->
     <script src="/resources/static/js/navAjax.js"></script>
 
 </header>

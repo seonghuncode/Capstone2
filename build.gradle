@@ -29,6 +29,9 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'
 
+	//정적 리소스 서버 끄지 않아도 자동 반영 해주는 의존성(css, js)
+	implementation 'org.springframework.boot:spring-boot-devtools'
+
 
 }
 
