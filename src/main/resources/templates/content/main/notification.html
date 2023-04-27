@@ -36,36 +36,9 @@
 
 <div class="topFrame">
 
+
     <!-- 페이지 좌측에 페이지 버튼을 보여준다. -------------------------------------------------------------------------------------------------------------->
-    <div class="menuTap">
-        <div class="btn-group-vertical menuTap_W" role="group" aria-label="Vertical radio toggle button group">
-            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked>
-            <label class="btn btn-outline-info" for="vbtn-radio1">
-                <a th:href="@{/mainPage}">
-                    공지
-                </a>
-            </label>
-            <a href=""></a>
-            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">
-            <label class="btn btn-outline-info" for="vbtn-radio2">
-                <a th:href="@{/#}">
-                규칙
-                </a>
-            </label>
-            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
-            <label class="btn btn-outline-info" for="vbtn-radio3">
-                <a th:href="@{/#}">
-                    조직도
-                </a>
-            </label>
-            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio4" autocomplete="off">
-            <label class="btn btn-outline-info" for="vbtn-radio4">
-                <a th:href="@{/#}">
-                회비내역
-                </a>
-            </label>
-        </div>
-    </div>
+    <th:block th:replace="fragment/MenuTaps :: MenuTaps"></th:block>
 
 
     <!-- 공지에 대한 페이지 ------------------------------------------------------------------------------------------------------------------>
