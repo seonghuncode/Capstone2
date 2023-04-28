@@ -9,16 +9,15 @@
     <!-- 페이지 좌측에 페이지 버튼을 보여준다. -------------------------------------------------------------------------------------------------------------->
     <div class="menuTap">
         <div class="btn-group-vertical menuTap_W" role="group" aria-label="Vertical radio toggle button group">
-            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked>
+            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off">
             <label class="btn btn-outline-info" for="vbtn-radio1">
-                <a th:href="@{/mainPage}">
+                <a id="c1" th:href="@{/mainPage}">
                     공지
                 </a>
             </label>
-            <a href=""></a>
             <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">
             <label class="btn btn-outline-info" for="vbtn-radio2">
-                <a th:href="@{/#}">
+                <a th:href="@{/rules}" >
                     규칙
                 </a>
             </label>
@@ -36,6 +35,11 @@
             </label>
         </div>
     </div>
+
+
+    <script src="/js/MenuTaps.js"></script>
+
+
 
 
 </header>

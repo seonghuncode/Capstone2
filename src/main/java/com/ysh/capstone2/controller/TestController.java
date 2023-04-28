@@ -27,6 +27,11 @@ public class TestController {
         return "content/main/notification";
     }
 
+    @RequestMapping("/rules")
+    public String rulesPage(){
+        return "content/main/rules";
+    }
+
 
 
 

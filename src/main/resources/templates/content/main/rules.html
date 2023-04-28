@@ -5,10 +5,39 @@
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
     <!-- config fragment 사용, header안에 공통적으로 들어가는 것들이 모여있다. -->
-    <th:block th:replace="fragment/config :: configFragment('메인화면')"></th:block>
+    <th:block th:replace="fragment/config :: configFragment('규칙 페이지')"></th:block>
 </head>
 <body>
 
-
 <!--Header 영역을 참조합니다.(내비게이션바를 불러온다)-->
-<header th:replace="fragment/header :: headerFragment('메인화면')"></header>
+<header th:replace="fragment/header :: headerFragment('규칙 페이지')"></header>
+
+<div class="rulesTopFrame">
+
+    <!-- 페이지 좌측에 페이지 버튼을 보여준다. -------------------------------------------------------------------------------------------------------------->
+    <th:block th:replace="fragment/MenuTaps :: MenuTaps"></th:block>
+
+    <div class="width">
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">※동아리 규칙※</label>
+<!--            권한자가 작성 페이지 에서 작성 -> 서버 -> DB저장 -> 클라이언트로 받아와서 보여주는 형식-->
+            <textarea class="form-control text" id="exampleFormControlTextarea1" rows="3" disabled  style="height: 418px;">
+                이용규칙
+                1.
+                2.
+                3.
+
+                최종 수정 : 2023.01.01
+            </textarea>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+
+</body>
+</html>
